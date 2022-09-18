@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <title>Signup</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
   <header class="bg-transparent fixed w-full top-0 left-0 z-30">
     <div class="container p-5 mx-auto ">
       <div class="flex mx-auto">
-        <p class="text-5xl text-white logo" style="font-family:'Passion One', cursive ;">AFFIXITY</p>
+        <p class="text-5xl text-white logo sm:text-center" style="font-family:'Passion One', cursive ;">AFFIXITY</p>
       </div>
 
     </div>
@@ -53,7 +53,10 @@
 						<input placeholder="Password" :type="show ? 'password' : 'text'" class="text-sm text-gray-700 px-3 py-3 rounded-lg w-full bg-white border border-gray-700 focus:outline-none focus:border-purple-400">
 					</div>
           			<div class="">
-						<input class=" w-full text-base  px-3 py-3 bg-white border border-gray-700 text-gray-900 rounded-lg focus:outline-none focus:border-purple-400" type="month" placeholder="Graduation Year">
+						<input class=" w-full text-base  px-3 py-3 bg-white border border-gray-700 text-gray-900 rounded-lg focus:outline-none focus:border-purple-400" type="text" placeholder="Graduation Year" onfocus="(this.type='month')">
+					</div>
+					<div class="">
+						<input class=" w-full text-base  px-3 py-3 bg-white border border-gray-700 text-gray-900 rounded-lg focus:outline-none focus:border-purple-400" type="text" placeholder="Tech Stacks">
 					</div>
 					<div>
 						<i class="fa-brands fa-github fa-lg absolute mt-6 ml-64"></i>
@@ -86,7 +89,7 @@
 					<div class="flex justify-center gap-5 w-full a">
 
 						<button type="submit"
-							class="w-full flex items-center justify-center border border-gray-700 hover:border-gray-900 hover:bg-gray-900 text-sm  text-gray-700 hover:text-white p-3 rounded-lg tracking-wide font-medium  cursor-pointer transition ease-in duration-200">
+							class="w-36 mx-auto flex items-center justify-center border border-gray-700 hover:border-gray-900 hover:bg-gray-900 text-sm  text-gray-700 hover:text-white p-3 rounded-lg tracking-wide font-medium  cursor-pointer transition ease-in duration-200">
 							<svg class="w-4 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 								<path fill="#EA4335" d="M5.266 9.765A7.077 7.077 0 0 1 12 4.909c1.69 0 3.218.6 4.418 1.582L19.91 3C17.782 1.145 15.055 0 12 0 7.27 0 3.198 2.698 1.24 6.65l4.026 3.115Z" />
 								<path fill="#34A853" d="M16.04 18.013c-1.09.703-2.474 1.078-4.04 1.078a7.077 7.077 0 0 1-6.723-4.823l-4.04 3.067A11.965 11.965 0 0 0 12 24c2.933 0 5.735-1.043 7.834-3l-3.793-2.987Z" />
@@ -96,18 +99,7 @@
 							<span>Google</span>
 						</button>
 
-						<button type="submit"
-							class="w-full flex items-center justify-center mb-6 md:mb-0 border border-gray-700 hover:border-gray-900 hover:bg-gray-900 text-sm text-gray-700 hover:text-white  rounded-lg tracking-wide font-medium  cursor-pointer transition ease-in duration-200 px-">
-							<svg class="w-4 mr-2" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-								<g id="Layer_1" />
-								<g id="Layer_2">
-									<path d="M50 2.5c-58.892 1.725-64.898 84.363-7.46 95h14.92c57.451-10.647 51.419-93.281-7.46-95z" style="fill:#1877f2" />
-									<path d="M57.46 64.104h11.125l2.117-13.814H57.46v-8.965c0-3.779 1.85-7.463 7.781-7.463h6.021V22.101c-12.894-2.323-28.385-1.616-28.722 17.66V50.29H30.417v13.814H42.54V97.5h14.92V64.104z" style="fill:#f1f1f1" />
-								</g>
-							</svg>
-
-							<span>Facebook</span>
-						</button>
+					
 
 					</div>
 				</div>
